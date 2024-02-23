@@ -1,6 +1,6 @@
 const saveBTN = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
-let myLeads = [];
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
 const ulEl = document.getElementById("ul-el");
 
 saveBTN.addEventListener("click", saveInput);
@@ -26,5 +26,5 @@ function saveInput() {
 
 
 for (let i = 0; i < myLeads.length; i++) {
-    ulEl.innerHTML += `<li>${myLeads[i]}</li>`;
+    ulEl.innerHTML += `<li><a href="${myLeads[i]}" target="_blank">${myLeads[i]}</a></li>`;
 }

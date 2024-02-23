@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #5f9341;
+}
+
 body {
     margin: 0;
     padding: 10px;
@@ -8,14 +12,27 @@ input {
     width: 100%;
     padding: 0.7em 0.7em;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
+    border: 1px solid var(--primary-color);
     margin: 0 0 0.5em 0;
 }
 
 button {
-    background-color: #5f9341;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     border: none;
     padding: 0.7em 1.4em;
     font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.3em 0;
+}
+
+li a {
+    color: var(--primary-color);
 }
